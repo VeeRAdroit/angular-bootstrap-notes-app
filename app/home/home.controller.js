@@ -74,14 +74,14 @@ function HomeController(UserService, NotesService, FlashService, $rootScope, $sc
             $scope.noteTitle = currentNote.title;
             $scope.noteContent = currentNote.content;
             $scope.notePriority = currentNote.priority;
-            $scope.editingNode = true;
+            $scope.editingNote = true;
             $('#noteModal').modal('show');
             $scope.notes.splice($index, 1);
         };
 
         $scope.addNote = function(){
             $scope.notePriority = 2;
-            $scope.editingNode = false;
+            $scope.editingNote = false;
             $('#noteModal').modal('show');
         };
 

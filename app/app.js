@@ -11,19 +11,19 @@
         $routeProvider
             .when('/', {
                 controller: 'HomeController',
-                templateUrl: 'home/home.view.html',
+                templateUrl: 'app/home/home.view.html',
                 controllerAs: 'vm'
             })
 
             .when('/login', {
                 controller: 'LoginController',
-                templateUrl: 'login/login.view.html',
+                templateUrl: 'app/login/login.view.html',
                 controllerAs: 'vm'
             })
 
             .when('/register', {
                 controller: 'RegisterController',
-                templateUrl: 'register/register.view.html',
+                templateUrl: 'app/register/register.view.html',
                 controllerAs: 'vm'
             })
 
@@ -39,7 +39,7 @@
         }
 
         if(!localStorage.users) {
-            $http.get('data/users.json').success(function(data) {
+            $http.get('app/data/users.json').success(function(data) {
                 localStorage.users = JSON.stringify(data.users);
                 var notes = {};
                 angular.forEach(data.users, function(user, index) {
