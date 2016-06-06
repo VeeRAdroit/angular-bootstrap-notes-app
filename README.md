@@ -8,6 +8,14 @@ Run the following commands
 <br/>
 <code>npm start</code>
 
-App will be available for use at localhost:8080
+App will be available for use at localhost:9090 and it will automatically open your default browser.
+
+If server address is not working or already in use, kill the process (in windows) using the following commands.
+
+<br/>
+<code>netstat -o -n -a | findstr 0.0:9090</code>
+<br/>
+<code>Taskkill /F /IM</code>
+
 
 Enjoy !
