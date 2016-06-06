@@ -80,6 +80,8 @@ function HomeController(UserService, NotesService, FlashService, $rootScope, $sc
         };
 
         $scope.addNote = function(){
+            $scope.noteTitle = "";
+            $scope.noteContent = "";
             $scope.notePriority = 2;
             $scope.editingNote = false;
             $('#noteModal').modal('show');
