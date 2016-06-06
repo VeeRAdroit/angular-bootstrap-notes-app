@@ -15,7 +15,8 @@ If server address is not working or already in use, kill the process (in windows
 <br/>
 <code>netstat -o -n -a | findstr 0.0:9090</code>
 <br/>
-<code>Taskkill /F /IM</code>
+and enter the last number (PID) at the ned of the command
+<code>Taskkill /F /IM PID</code>
 
 
 Enjoy !
