@@ -18,5 +18,7 @@ and enter the last number (PID) at the end of the command
 <br/>
 <code>Taskkill /F /IM PID</code>
 
+Prepopulated the app with 3 users
+Alice, Bob and Charlie. With the same password same as username ex: Alice/Alice
 
 Enjoy !
